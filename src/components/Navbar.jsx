@@ -109,7 +109,7 @@ const Navbar = () => {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-6 border-t border-gypsy-gold/20 bg-gradient-to-b from-white to-gray-50 animate-fade-in-up">
+          <div className="md:hidden py-6 border-t border-gypsy-gold/20 bg-gradient-to-b from-white to-gray-50 animate-fade-in-down">
             <div className="flex flex-col space-y-2">
               <button
                 onClick={() => scrollToSection('hero')}

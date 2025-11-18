@@ -207,15 +207,19 @@ const Contact = () => {
 
 
         {/* Footer */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-center">
+        <div className="mt-12 pt-8 border-t border-white/10 text-center space-y-2">
           <p className="text-gray-400 font-lato">
             © 2025 GYPSY. All rights reserved. | Bridal Jewelry Rentals, Cosmetics & Salon Accessories
           </p>
+          <p className="text-gray-500 text-sm font-lato">
+            Developed by{' '}
+            <span className="font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+              <a href="jasonrj.netlify.app" target="_blank" rel="noopener noreferrer">RJ</a>    
+            </span>
+            </p>
+          </div>
         </div>
-      </div>
     </section>
   );
 };
-
 export default Contact;
-
