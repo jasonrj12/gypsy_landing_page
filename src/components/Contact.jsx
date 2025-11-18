@@ -108,7 +108,7 @@ const Contact = () => {
               {/* Mini Map */}
               <div className="mb-4 rounded-lg overflow-hidden border border-white/20 shadow-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.5822367105507!2d79.8557135!3d6.944638599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25900395e1b43%3A0x698c50402a408e41!2sGypsy!5e1!3m2!1sen!2slk!4v1763455066276!5m2!1sen!2slk"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.548423772917!2d79.85587289159534!3d6.9444447322043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25900395e1b43%3A0x698c50402a408e41!2sGypsy!5e0!3m2!1sen!2slk!4v1763471867701!5m2!1sen!2slk"
                   width="100%"
                   height="200"
                   style={{ border: 0 }}
@@ -186,10 +186,10 @@ const Contact = () => {
               </h3>
               
               <a 
-                href="tel:+94766061433"
+                href="tel:+94776061433"
                 className="text-xl font-bold text-gypsy-gold hover:text-yellow-400 transition-colors block mb-3"
               >
-                +94 76 606 1433
+                +94 77 606 1433
               </a>
 
               <div className="space-y-2 pt-4 border-t border-white/10">
