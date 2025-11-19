@@ -25,7 +25,10 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-[70vh] flex items-center justify-center overflow-hidden py-16">
+    <section
+      id="hero"
+      className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-40 pb-16 scroll-mt-32"
+    >
       {/* Background Image with Parallax Effect */}
       <div 
         className="absolute inset-0 bg-no-repeat transition-transform duration-700 ease-out"
@@ -76,19 +79,13 @@ const Hero = () => {
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 w-full py-8">
         <div className="max-w-6xl mx-auto space-y-6">
-          {/* Main Title with Glow Effect */}
-          <div className="animate-fade-in-up">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-white tracking-wider drop-shadow-2xl relative inline-block leading-tight">
-              <span className="relative z-10">GYPSY</span>
-              <span 
-                className="absolute inset-0 blur-3xl opacity-50"
-                style={{
-                  textShadow: '0 0 40px rgba(212, 175, 55, 0.5), 0 0 80px rgba(212, 175, 55, 0.3)',
-                }}
-              >
-                GYPSY
-              </span>
-            </h1>
+          {/* Main Logo Display */}
+          <div className="animate-fade-in-up flex justify-center">
+            <img
+              src="/logo2.png"
+              alt="Gypsy Fashion Jewellery logo"
+              className="w-64 sm:w-80 lg:w-[28rem] h-auto drop-shadow-[0_15px_35px_rgba(0,0,0,0.6)] brightness-110"
+            />
           </div>
 
           {/* Animated Divider */}
