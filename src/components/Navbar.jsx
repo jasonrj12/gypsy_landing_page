@@ -32,31 +32,27 @@ const Navbar = () => {
   return (
     <nav className="fixed inset-x-0 top-0 z-50 pointer-events-none">
       <div
-        className={`w-full px-4 sm:px-6 lg:px-10 transition-all duration-500 ${
-          isScrolled ? 'pt-3 pb-3' : 'pt-5 pb-5'
-        }`}
+        className={`w-full px-4 sm:px-6 lg:px-10 transition-all duration-500 ${isScrolled ? 'pt-3 pb-3' : 'pt-5 pb-5'
+          }`}
       >
         <div
-          className={`relative flex w-full max-w-7xl mx-auto items-center gap-4 rounded-[2.5rem] border transition-all duration-500 backdrop-blur-2xl pointer-events-auto ${
-            isScrolled
+          className={`relative flex w-full max-w-7xl mx-auto items-center gap-4 rounded-[2.5rem] border transition-all duration-500 backdrop-blur-2xl pointer-events-auto ${isScrolled
               ? 'border-white/10 bg-gradient-to-br from-black/90 via-purple-950/80 to-rose-900/70 shadow-2xl shadow-purple-900/30 px-5 py-3'
               : 'border-white/20 bg-white/80 bg-gradient-to-br from-white/90 via-white/70 to-white/80 shadow-2xl shadow-gypsy-gold/15 px-8 py-4'
-          }`}
+            }`}
         >
           {/* Glow Accent */}
           <div
-            className={`absolute -inset-1 rounded-[2.75rem] blur-2xl pointer-events-none transition-all duration-500 ${
-              isScrolled
+            className={`absolute -inset-1 rounded-[2.75rem] blur-2xl pointer-events-none transition-all duration-500 ${isScrolled
                 ? 'bg-gradient-to-r from-purple-600/30 via-gypsy-gold/25 to-pink-500/30 opacity-70'
                 : 'bg-gradient-to-r from-gypsy-gold/40 via-transparent to-yellow-500/40 opacity-70'
-            }`}
+              }`}
           ></div>
           <div
-            className={`absolute inset-0 rounded-[2.5rem] border pointer-events-none transition-all duration-500 ${
-              isScrolled
+            className={`absolute inset-0 rounded-[2.5rem] border pointer-events-none transition-all duration-500 ${isScrolled
                 ? 'bg-gradient-to-br from-black/70 via-purple-900/60 to-rose-900/60 border-white/10'
                 : 'bg-white/40 border-white/20'
-            }`}
+              }`}
           ></div>
 
           {/* Logo Section */}
@@ -66,9 +62,9 @@ const Navbar = () => {
           >
             {!logoError ? (
               <img
-                src="/logo.png"
+                src={isScrolled ? "/logo2.png" : "/logo.png"}
                 alt="Gypsy Fashion Jewellery logo"
-                className="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_6px_15px_rgba(0,0,0,0.45)] brightness-110"
+                className="h-16 w-auto object-contain transition-all duration-500 group-hover:scale-105 drop-shadow-[0_6px_15px_rgba(0,0,0,0.45)] brightness-110"
                 onError={() => setLogoError(true)}
               />
             ) : (
@@ -115,19 +111,16 @@ const Navbar = () => {
               <span className="sr-only">{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
               <div className="relative w-5 h-5">
                 <span
-                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${
-                    isMenuOpen ? 'top-1/2 rotate-45' : 'top-1'
-                  }`}
+                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${isMenuOpen ? 'top-1/2 rotate-45' : 'top-1'
+                    }`}
                 ></span>
                 <span
-                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${
-                    isMenuOpen ? 'opacity-0' : 'top-1/2'
-                  }`}
+                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'top-1/2'
+                    }`}
                 ></span>
                 <span
-                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${
-                    isMenuOpen ? 'bottom-1/2 -rotate-45' : 'bottom-1'
-                  }`}
+                  className={`absolute inset-x-0 h-[2px] bg-white rounded-full transition-all duration-300 ${isMenuOpen ? 'bottom-1/2 -rotate-45' : 'bottom-1'
+                    }`}
                 ></span>
               </div>
             </button>
